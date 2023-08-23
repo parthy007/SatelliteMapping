@@ -1,0 +1,48 @@
+.topBar{
+    background: url("../../assests/starspicture.jpg");
+    padding: 0.4rem;
+    height: 10vh;
+}
+
+.logoContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 100%;
+}
+.taglineContainer{
+    margin-left: 2rem;
+    width: 21rem;
+    display: inline-block;
+    overflow: hidden;
+}
+.tagline{
+    color: white;
+    width: 100%;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid gray; 
+    animation: typing 5s steps(22, end) infinite, blink-caret .8s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: gray;
+    }
+}
