@@ -1,7 +1,7 @@
 #node
 FROM node:alpine3.17 as nodework
 WORKDIR /app
-COPY package.json ./
+COPY src/package.json ./
 RUN npm install
 COPY . .
 RUN npm run build

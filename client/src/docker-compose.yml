@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    container_name: reactContainer1812
+    build:
+       context: ../../client
+       dockerfile: src/Dockerfile
+    ports: 
+      - 3000:80 
